@@ -110,7 +110,7 @@ I think the model is performing well, but needs improvement.
 
 ####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-Here are seven German traffic signs that I found on the web:
+Here are five German traffic signs that I found on the web:
 
 ![alt text][image2] ![alt text][image3] ![alt text][image4] 
 ![alt text][image5] ![alt text][image6]
