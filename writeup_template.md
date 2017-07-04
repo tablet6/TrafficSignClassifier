@@ -24,7 +24,7 @@ The goals / steps of this project are the following:<br />
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
-The Project is in this file: Traffic\_Sign\_Classifier.html
+The Project HTML is here: [Traffic\_Sign\_Classifier.html](http://htmlpreview.github.com/?https://github.com/tablet6/TrafficSignClassifier/blob/master/Traffic_Sign_Classifier.html)
 
 ---
 
