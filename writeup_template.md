@@ -56,7 +56,11 @@ To pre-process the image data - I used the below normalization.
 image\_data = (image\_data - mean(image\_data))/std(image\_data). </br>
 This is for calculating the standard deviations from the mean with given: image\_data, mean and Standard Deviation, which is also called standard or z-score.
 
-I started with (image_data-128.)/128, but the model did not generate good validation accuracy. So settled on standard score normalization.
+Normalization is needed to be done for numerical stability. So we don't need to be concerned with very big values or very small values. If the data is badly conditioned, the optimizer need to do lot of searching to come to a good solution. Good normalization helps the Gradients not go out of control and we only need one learning rate instead of per weight.
+
+In the normalization I used, the mean subtration gets the input data centered. Dividing by Standard Deviation moves the input by the number of standard deviations away from the mean.
+
+One of the method that the The Into to Tensor Flow suggests the R-128/128 method for all pixel values. I tried it but eventually settled with the above method: with mean and standard deviation because of better normalized data that gave better Validation accuracy.
 
 
 ####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
